@@ -328,7 +328,13 @@
 
   function scheduleHeroWarm() {
     if (heroReadyPromise) return;
-    ensureHeroReady();
+    if (isVideoReady() || !video) { ensureHeroReady(); return; }
+    var once = function () {
+      video.removeEventListener('canplay', once);
+      ensureHeroReady();
+    };
+    video.addEventListener('canplay', once);
+    setTimeout(function () { ensureHeroReady(); }, 5000);
   }
 
   if (document.readyState === 'complete') scheduleHeroWarm();
@@ -483,27 +489,14 @@
     if (opening || finished) return;
     opening = true;
     if (openBtn) openBtn.disabled = true;
+    landing.classList.add('is-opening');
 
     /* Start music inside the user gesture — this is the only reliable
        moment browsers will allow autoplay with sound */
     startAudio();
 
-    if (landing) {
-      landing.classList.add('is-opening');
-      requestAnimationFrame(function () {
-        requestAnimationFrame(function () {
-          landing.classList.remove('is-opening');
-          landing.classList.add('is-out');
-          setTimeout(function () {
-            landing.classList.add('is-gone');
-          }, COVER_FADE_MS);
-        });
-      });
-    }
-
-    ensureHeroReady().then(function () {
-      revealHeroAndSite();
-    });
+    if (!video) { finishReveal(); return; }
+    whenVideoReady(startPlaybackUnderCover);
   }
 
   if (openBtn) openBtn.addEventListener('click', openInvitation);
