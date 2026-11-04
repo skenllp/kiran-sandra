@@ -756,11 +756,11 @@
   else window.addEventListener('load', initGallery);
 
   /* ---------------------------------------------------------
-     8 · Countdown — 18 Jan 2026, 12:00 IST
+     8 · Countdown to Marriage Date (Monday, 18 January 2027 at 12:00 PM IST)
      --------------------------------------------------------- */
   (function countdown() {
-    /* Wedding: Sunday 18 January 2026 at 12:00 PM IST (UTC+5:30) */
-    var target = new Date('2026-01-18T12:00:00+05:30').getTime();
+    /* Wedding: Monday, 18 January 2027 at 12:00 PM IST (UTC+5:30) */
+    var target = new Date('2027-01-18T12:00:00+05:30').getTime();
     var d = document.getElementById('cdD'),
         h = document.getElementById('cdH'),
         m = document.getElementById('cdM'),
