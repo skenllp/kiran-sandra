@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#180724"/>
+      <stop offset="50%" stop-color="#2d103f"/>
+      <stop offset="100%" stop-color="#14051d"/>
+    </linearGradient>
+    <radialGradient id="glow2" cx="50%" cy="38%" r="55%">
+      <stop offset="0%" stop-color="#e5c885" stop-opacity="0.3"/>
+      <stop offset="45%" stop-color="#b88628" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#14051d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d4af37"/>
+      <stop offset="50%" stop-color="#fff0be"/>
+      <stop offset="100%" stop-color="#aa7a1e"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="480" fill="url(#bg2)"/>
+  <circle cx="400" cy="210" r="280" fill="url(#glow2)"/>
+
+  <!-- Grand Ballroom Chandelier / Canopy motif -->
+  <g stroke="url(#gold2)" fill="none" stroke-width="1.4" opacity="0.85">
+    <!-- Ceiling Mount & Stem -->
+    <path d="M400 40 V100" stroke-width="2"/>
+    <ellipse cx="400" cy="100" rx="30" ry="8"/>
+    <!-- Chandelier tiers -->
+    <path d="M340 140 Q400 170 460 140" stroke-width="1.6"/>
+    <path d="M310 180 Q400 220 490 180" stroke-width="1.8"/>
+    <path d="M280 220 Q400 270 520 220" stroke-width="2"/>
+    <!-- Crystal Droplets / Garland Chains -->
+    <path d="M400 100 L340 140 M400 100 L460 140 M400 100 L310 180 M400 100 L490 180 M400 100 L280 220 M400 100 L520 220" opacity="0.45" stroke-dasharray="3 3"/>
+    <circle cx="400" cy="275" r="5" fill="#f8e8c6"/>
+    <circle cx="340" cy="245" r="3.5" fill="#f8e8c6"/>
+    <circle cx="460" cy="245" r="3.5" fill="#f8e8c6"/>
+    <circle cx="280" cy="225" r="3.5" fill="#f8e8c6"/>
+    <circle cx="520" cy="225" r="3.5" fill="#f8e8c6"/>
+    <!-- Arch Gateway -->
+    <path d="M220 440 V300 Q400 230 580 300 V440" stroke-width="1.2" opacity="0.4"/>
+  </g>
+
+  <!-- Sparkles -->
+  <g fill="#fff3c4" opacity="0.75">
+    <circle cx="190" cy="120" r="2"/>
+    <circle cx="610" cy="130" r="1.8"/>
+    <circle cx="160" cy="250" r="1.6"/>
+    <circle cx="640" cy="240" r="2.2"/>
+    <circle cx="240" cy="190" r="1.5"/>
+    <circle cx="560" cy="180" r="1.5"/>
+  </g>
+
+  <text x="400" y="380" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="24" letter-spacing="4" fill="#f8e8c6">LA MIRAGE WEDDING VENUE</text>
+  <text x="400" y="408" text-anchor="middle" font-family="'Jost', sans-serif" font-size="12" letter-spacing="3" fill="#c5a059">KORATTY · KERALAM</text>
+</svg>
+

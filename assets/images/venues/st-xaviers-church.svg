@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1b0826"/>
+      <stop offset="50%" stop-color="#2a0d3b"/>
+      <stop offset="100%" stop-color="#14051d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#e5c885" stop-opacity="0.32"/>
+      <stop offset="45%" stop-color="#b88628" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#14051d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d4af37"/>
+      <stop offset="50%" stop-color="#fff0be"/>
+      <stop offset="100%" stop-color="#aa7a1e"/>
+    </linearGradient>
+    <linearGradient id="softgold" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#fff0be" stop-opacity="0.25"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="480" fill="url(#bg)"/>
+  <circle cx="400" cy="220" r="280" fill="url(#glow)"/>
+
+  <!-- Architectural Gothic Arch / Church Facade -->
+  <g stroke="url(#gold)" fill="none" stroke-width="1.5" opacity="0.85">
+    <!-- Outer Arch -->
+    <path d="M260 440 V240 C260 140 400 90 400 90 C400 90 540 140 540 240 V440"/>
+    <!-- Inner Arch -->
+    <path d="M290 440 V255 C290 170 400 125 400 125 C400 125 510 170 510 255 V440" stroke-width="1"/>
+    <!-- Rose Window Ring -->
+    <circle cx="400" cy="230" r="54" stroke-width="1.8"/>
+    <circle cx="400" cy="230" r="44" stroke-dasharray="4 4" stroke-width="1"/>
+    <circle cx="400" cy="230" r="16" fill="url(#softgold)" stroke-width="1.2"/>
+    <!-- Rose Petals -->
+    <path d="M400 176 V284 M346 230 H454 M362 192 L438 268 M362 268 L438 192" stroke-width="0.8" opacity="0.6"/>
+    <!-- Spire Cross -->
+    <path d="M400 50 V90 M388 64 H412" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Flanking Pillars -->
+    <path d="M230 440 V270 L260 240 M570 440 V270 L540 240" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- Stars / Sparkles -->
+  <g fill="#fff3c4" opacity="0.7">
+    <circle cx="180" cy="130" r="1.8"/>
+    <circle cx="620" cy="140" r="2"/>
+    <circle cx="210" cy="200" r="1.4"/>
+    <circle cx="590" cy="210" r="1.6"/>
+    <circle cx="140" cy="280" r="1.5"/>
+    <circle cx="660" cy="290" r="1.8"/>
+  </g>
+
+  <!-- Label Badge Subtext inside graphic -->
+  <text x="400" y="380" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="24" letter-spacing="4" fill="#f8e8c6">ST. XAVIER'S FORANE CHURCH</text>
+  <text x="400" y="408" text-anchor="middle" font-family="'Jost', sans-serif" font-size="12" letter-spacing="3" fill="#c5a059">KARUKUTTY · ANGAMALY</text>
+</svg>
+

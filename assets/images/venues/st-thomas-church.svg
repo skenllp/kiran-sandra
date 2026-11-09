@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14061e"/>
+      <stop offset="50%" stop-color="#2a0d3b"/>
+      <stop offset="100%" stop-color="#110419"/>
+    </linearGradient>
+    <radialGradient id="glow3" cx="50%" cy="38%" r="55%">
+      <stop offset="0%" stop-color="#e5c885" stop-opacity="0.34"/>
+      <stop offset="45%" stop-color="#b88628" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#14051d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d4af37"/>
+      <stop offset="50%" stop-color="#fff0be"/>
+      <stop offset="100%" stop-color="#aa7a1e"/>
+    </linearGradient>
+    <linearGradient id="softgold3" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#fff0be" stop-opacity="0.25"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="480" fill="url(#bg3)"/>
+  <circle cx="400" cy="210" r="280" fill="url(#glow3)"/>
+
+  <!-- Holy Matrimony Catholic Cathedral / Cross facade motif -->
+  <g stroke="url(#gold3)" fill="none" stroke-width="1.5" opacity="0.85">
+    <!-- Church Roof / Spire Lines -->
+    <path d="M400 60 L240 220 V440 H560 V220 Z"/>
+    <!-- Belfry Arch -->
+    <path d="M360 210 Q400 160 440 210 V280 H360 Z" fill="url(#softgold3)"/>
+    <!-- Church Bell -->
+    <path d="M386 230 C386 218 414 218 414 230 C414 246 424 252 424 256 H376 C376 252 386 246 386 230 Z" stroke-width="1.2"/>
+    <circle cx="400" cy="260" r="3" fill="#f8e8c6"/>
+    <!-- Main Cross on top -->
+    <path d="M400 24 V60 M386 36 H414" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Tall arched double doors -->
+    <path d="M370 440 V330 Q400 300 430 330 V440" stroke-width="1.4"/>
+    <path d="M400 300 V440" stroke-width="1"/>
+    <!-- Flanking Twin Columns -->
+    <path d="M280 440 V240 M520 440 V240" stroke-width="1" stroke-dasharray="6 3" opacity="0.5"/>
+  </g>
+
+  <!-- Sparkles -->
+  <g fill="#fff3c4" opacity="0.75">
+    <circle cx="170" cy="110" r="1.8"/>
+    <circle cx="630" cy="120" r="2"/>
+    <circle cx="210" cy="220" r="1.5"/>
+    <circle cx="590" cy="230" r="1.6"/>
+  </g>
+
+  <text x="400" y="380" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="24" letter-spacing="4" fill="#f8e8c6">ST. THOMAS R.C. CHURCH</text>
+  <text x="400" y="408" text-anchor="middle" font-family="'Jost', sans-serif" font-size="12" letter-spacing="3" fill="#c5a059">VALIAVELI · THIRUVANANTHAPURAM</text>
+</svg>
+
