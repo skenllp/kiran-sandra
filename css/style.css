@@ -513,21 +513,51 @@ body:not(.is-revealed) #site *{animation-play-state:paused!important}
 }
 
 .scroll-indicator{
-  display:flex;flex-direction:column;align-items:center;gap:8px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
   color:#fff;
-  padding:10px 14px;
+  padding:14px 28px;
+  background:rgba(197,160,89,.28);
+  border:2px solid rgba(229,200,133,.8);
+  border-radius:50px;
+  box-shadow:0 8px 24px rgba(0,0,0,.5), 0 0 20px rgba(229,200,133,.4);
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
   -webkit-tap-highlight-color:transparent;
+  transition:transform .3s var(--ease), box-shadow .3s var(--ease), background .3s var(--ease);
+  animation:scrollPulse 2.5s ease-in-out infinite;
 }
-.scroll-indicator__word{font-size:10.5px;letter-spacing:.36em;text-transform:uppercase;font-weight:900;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.5);}
+@keyframes scrollPulse{
+  0%,100%{
+    box-shadow:0 8px 24px rgba(0,0,0,.5), 0 0 20px rgba(229,200,133,.4);
+    border-color:rgba(229,200,133,.8);
+  }
+  50%{
+    box-shadow:0 8px 32px rgba(0,0,0,.6), 0 0 35px rgba(229,200,133,.85);
+    border-color:rgba(229,200,133,1);
+  }
+}
+.scroll-indicator:hover{
+  transform:translateY(-3px);
+  background:rgba(197,160,89,.38);
+  box-shadow:0 12px 32px rgba(0,0,0,.6), 0 0 30px rgba(229,200,133,.7);
+  animation:none;
+}
+.scroll-indicator__word{
+  font-size:13px;
+  letter-spacing:.48em;
+  text-transform:uppercase;
+  font-weight:900;
+  color:#FFF8EC;
+  text-shadow:0 2px 8px rgba(0,0,0,.8), 0 0 14px rgba(229,200,133,.7);
+}
 .scroll-indicator__arrow{
-  width:30px;height:30px;
-  color:#fff;
-  filter:drop-shadow(0 0 6px rgba(0,0,0,.5));
-  animation:arrowBob 1.8s ease-in-out infinite;
+  display:none;
 }
 @keyframes arrowBob{
-  0%,100%{transform:translateY(0);opacity:.75}
-  50%{transform:translateY(6px);opacity:1}
+  0%,100%{transform:translateY(0);opacity:.85}
+  50%{transform:translateY(8px);opacity:1}
 }
 
 /* ============================================================
@@ -1894,6 +1924,8 @@ body.finale-particles .finale-fallback{opacity:0}
   .scene--hero.loaded.text-ready > .section-content,
   .scene--hero > .scroll-indicator,
   .scene--hero.loaded.text-ready > .scroll-indicator{opacity:1;transform:none;}
+  .scroll-indicator{animation:none!important;}
+  .scroll-indicator__arrow{animation:none!important;}
 }
 @media (prefers-contrast:more){
   .sec-note,.fact-s,.tl-text,.card p{color:#281033}

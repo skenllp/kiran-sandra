@@ -205,7 +205,7 @@ img.section-bg{
   flex:0 0 auto;
   text-align:center;
   padding:0 clamp(16px,5vw,48px);
-  margin:0 0 clamp(14px,2.5vh,24px);
+  margin:0 0 clamp(8px,1.5vh,16px);
 }
 
 /* ── SCROLL INDICATOR ──────────────────────────────────────── */
@@ -213,7 +213,8 @@ img.section-bg{
   position:relative;
   z-index:3;
   flex:0 0 auto;
-  margin-bottom:max(clamp(10px,2.5vh,24px), env(safe-area-inset-bottom, 0px));
+  margin-top:clamp(16px,3vh,28px);
+  margin-bottom:max(clamp(40px,7vh,80px), env(safe-area-inset-bottom, 0px));
   opacity:0;
   transition:opacity .6s ease .3s;
 }
